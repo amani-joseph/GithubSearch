@@ -12,7 +12,7 @@ export class SearchComponent implements OnInit {
   ngOnInit(): void {}
   search(searchTerm: string) {
     if (searchTerm !== '') {
-      this.profileService.getData().subscribe((data) => {
+      this.profileService.getData(this.profile).subscribe((data) => {
         console.log('User: ', data);
       });
       this.profile = '';
