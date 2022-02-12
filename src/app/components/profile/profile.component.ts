@@ -8,7 +8,7 @@ import { ProfileService } from '../../services/profile.service';
   styleUrls: ['./profile.component.css'],
 })
 export class ProfileComponent implements OnInit {
-  constructor() {}
+  constructor(private profileService: ProfileService) {}
 
   ngOnInit(): void {}
 }

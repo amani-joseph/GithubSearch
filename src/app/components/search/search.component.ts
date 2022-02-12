@@ -7,6 +7,7 @@ import { ProfileService } from '../../services/profile.service';
   styleUrls: ['./search.component.css'],
 })
 export class SearchComponent implements OnInit {
+  profile: string = '';
   constructor(private profileService: ProfileService) {}
   ngOnInit(): void {}
   search(searchTerm: string) {
@@ -14,6 +15,7 @@ export class SearchComponent implements OnInit {
       this.profileService.getData().subscribe((data) => {
         console.log('User: ', data);
       });
+      this.profile = '';
     }
   }
 }

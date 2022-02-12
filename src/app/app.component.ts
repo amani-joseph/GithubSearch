@@ -9,9 +9,9 @@ import { ProfileService } from './services/profile.service';
 export class AppComponent {
   title = 'GithubSearch';
   constructor(private profileService: ProfileService) {}
-  search() {
-    this.profileService.getData().subscribe((data) => {
-      console.log('User: ', data);
-    });
-  }
+  // search() {
+  //   this.profileService.getData().subscribe((data) => {
+  //     console.log('User: ', data);
+  //   });
+  // }
 }
