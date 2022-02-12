@@ -11,10 +11,10 @@ import { Observable } from 'rxjs';
 export class ProfileService {
   // profile = new BehaviorSubject<any>([]);
   constructor(private http: HttpClient) {}
-  // getData(): Observable<any> {
-  //   const url = 'https://api.github.com/users';
-  //   return this.http.get<any>(url);
-  // }
+  getData(): Observable<any> {
+    const url = 'https://api.github.com/users/amani-joseph';
+    return this.http.get<any>(url);
+  }
   // getMyProfile() {
   //   return this.http
   //     .get(

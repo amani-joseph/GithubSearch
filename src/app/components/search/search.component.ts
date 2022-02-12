@@ -8,10 +8,12 @@ import { ProfileService } from '../../services/profile.service';
 })
 export class SearchComponent implements OnInit {
   constructor(private profileService: ProfileService) {}
-
   ngOnInit(): void {}
   search(searchTerm: string) {
     if (searchTerm !== '') {
+      this.profileService.getData().subscribe((data) => {
+        console.log('User: ', data);
+      });
     }
   }
 }
