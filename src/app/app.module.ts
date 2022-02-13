@@ -7,10 +7,21 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { HeaderComponent } from './components/header/header.component';
+import { NotFoundComponent } from './components/not-found/not-found.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { UserNotFoundDirective } from './directives/user-not-found.directive';
+import { CustomPipe } from './pipes/custom.pipe';
 
 @NgModule({
-  declarations: [AppComponent, ProfileComponent, HeaderComponent, FooterComponent],
+  declarations: [
+    AppComponent,
+    ProfileComponent,
+    HeaderComponent,
+    FooterComponent,
+    NotFoundComponent,
+    UserNotFoundDirective,
+    CustomPipe,
+  ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],

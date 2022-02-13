@@ -29,6 +29,6 @@ export class ProfileComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.search('amani-joseph');
+    // this.search('amani-joseph');
   }
 }
