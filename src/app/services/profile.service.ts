@@ -8,7 +8,6 @@ import { Observable } from 'rxjs';
   providedIn: 'root',
 })
 export class ProfileService {
-  // userName: any = 'amani-joseph';
   constructor(private http: HttpClient) {}
   getData(userName: string): Observable<any> {
     const url = `https://api.github.com/users/${userName}`;
