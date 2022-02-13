@@ -9,10 +9,12 @@ import { Observable } from 'rxjs';
   providedIn: 'root',
 })
 export class ProfileService {
-  // profile = new BehaviorSubject<any>([]);
   constructor(private http: HttpClient) {}
   getData(profileData: string): Observable<any> {
-    // profileData = ''
+    const url = `https://api.github.com/users/${profileData}`;
+    return this.http.get<any>(url);
+  }
+  getRepo(profileData: string): Observable<any> {
     const url = `https://api.github.com/users/${profileData}`;
     return this.http.get<any>(url);
   }

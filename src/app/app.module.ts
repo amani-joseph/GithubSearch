@@ -7,15 +7,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { HeaderComponent } from './components/header/header.component';
-import { SearchComponent } from './components/search/search.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    ProfileComponent,
-    HeaderComponent,
-    SearchComponent,
-  ],
+  declarations: [AppComponent, ProfileComponent, HeaderComponent],
   imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
