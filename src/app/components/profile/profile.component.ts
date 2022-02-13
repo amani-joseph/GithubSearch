@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ProfileService } from '../../services/profile.service';
 import { Profile } from '../../models/profile';
 import { Repo } from '../../models/repo';
+import { catchError } from 'rxjs';
 
 @Component({
   selector: 'app-profile',
@@ -12,6 +13,7 @@ export class ProfileComponent implements OnInit {
   profile: any = 'amani-joseph';
   user!: Profile;
   repos: any;
+  error: any = null;
 
   constructor(private profileService: ProfileService) {}
   search(searchTerm: string) {
@@ -23,12 +25,12 @@ export class ProfileComponent implements OnInit {
       this.profileService.getRepo(this.profile).subscribe((data) => {
         console.log('Repo: ', data);
         this.repos = data;
-      });
-      this.profile = '';
+      }),
+        (this.profile = '');
     }
   }
 
   ngOnInit(): void {
-    // this.search('amani-joseph');
+    this.search('amani-joseph');
   }
 }

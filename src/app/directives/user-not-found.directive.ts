@@ -1,10 +1,12 @@
-import { Directive } from '@angular/core';
+import { Directive, ElementRef, Renderer2, OnInit } from '@angular/core';
 
 @Directive({
-  selector: '[appUserNotFound]'
+  selector: '[appUserNotFound]',
 })
-export class UserNotFoundDirective {
+export class UserNotFoundDirective implements OnInit {
+  constructor(private elRef: ElementRef, private renderer: Renderer2) {}
 
-  constructor() { }
-
+  ngOnInit(): void {
+    this.renderer.setStyle(this.elRef.nativeElement, 'display', 'none');
+  }
 }
