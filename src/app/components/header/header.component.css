@@ -16,6 +16,6 @@
   border-top: 3px solid rgba(255, 255, 255, 0.609);
   border-left: 3px solid rgba(255, 255, 255, 0.609);
   border-radius: 20px !important;
-  color: #ddd;
+  color: rgba(246, 245, 245, 0.972) !important;
   letter-spacing: 0.8px;
 }
