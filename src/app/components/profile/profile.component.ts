@@ -19,8 +19,14 @@ export class ProfileComponent implements OnInit {
       this.profileService.getData(this.profile).subscribe((data) => {
         console.log('User: ', data);
         this.user = data;
-        this.profile = '';
+
       });
+      this.profileService.getRepo(this.profile).subscribe((data) => {
+        console.log('Repo: ', data);
+        this.repos = data;
+
+      });
+      this.profile = '';
     }
   }
 

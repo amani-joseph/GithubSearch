@@ -15,7 +15,7 @@ export class ProfileService {
     return this.http.get<any>(url);
   }
   getRepo(profileData: string): Observable<any> {
-    const url = `https://api.github.com/users/${profileData}`;
+    const url = `https://api.github.com/users/${profileData}/repos`;
     return this.http.get<any>(url);
   }
   // getMyProfile() {
