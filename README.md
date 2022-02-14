@@ -1,5 +1,7 @@
 # GithubSearch
 
+
+
 ### Description
 <p>
 This is an angular application that allows users to enter a GitHub username into a form, submit it, and see names and descriptions of that person's public repositories.
@@ -38,6 +40,7 @@ There are no known bugs.
 - HTML
 - CSS
 - Angular
+- Typescript
 - Bootstrap 5
 
 ### Support and contact details
