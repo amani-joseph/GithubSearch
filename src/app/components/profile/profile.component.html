@@ -75,9 +75,10 @@
                   >{{ user.created_at | date: "mediumDate" }}
                 </span>
                 <div>
-                  <span>Blog: </span>
+                  <span>Website: </span>
                   <span class="label label-info fw-bold text-info"
-                    >{{ user.blog }}
+                    ><a href="{{user.blog}}"> {{ user.blog | shortenStr }}</a>
+
                   </span>
                 </div>
               </div>
@@ -107,12 +108,18 @@
                   <p>{{ repo.description }}</p>
                 </div>
                 <div class="col-md-3">
-                  <span class="label label-default mx-2"
-                    >{{ repo.watchers }} Watchers</span
-                  >
-                  <span class="label label-primary mx-2"
-                    >{{ repo.forks }} Forks</span
-                  >
+                  <div>
+                    <span class="label label-default mx-2"
+                      >{{ repo.watchers }} Watchers</span
+                    >
+                    <span class="label label-primary mx-2"
+                      >{{ repo.forks }} Forks</span
+                    >
+                  </div>
+
+                  <div class="label label-primary mx-2">
+                    Created on: {{ repo.created_at | custom }}
+                  </div>
                 </div>
               </div>
               <hr />

@@ -11,6 +11,7 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { UserNotFoundDirective } from './directives/user-not-found.directive';
 import { CustomPipe } from './pipes/custom.pipe';
+import { ShortenStrPipe } from './pipes/shorten-str.pipe';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { CustomPipe } from './pipes/custom.pipe';
     NotFoundComponent,
     UserNotFoundDirective,
     CustomPipe,
+    ShortenStrPipe,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [],
