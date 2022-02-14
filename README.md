@@ -7,6 +7,10 @@ This is an angular application that allows users to enter a GitHub username into
 This project was generated with Angular CLI version 13.2.2
 </p>
 
+### Live-link
+<p> https://amani-joseph.github.io/githubsearch/</p>
+
+
 ### Development server
 Run ng serve for a dev server. Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files.
 
@@ -27,15 +31,16 @@ You need to have visual studio code installed.
 Clone the repository
 Generate an api key and store it in the environment
 Go Live.
-Known Bugs
+### Known Bugs
 There are no known bugs.
 
 ### Technologies Used
-HTML
-CSS
-Angular
-Bootstrap 5
-Support and contact details
+- HTML
+- CSS
+- Angular
+- Bootstrap 5
+
+### Support and contact details
 Email : amani.joseph@student.moringaschool.com
 
 ### License
