@@ -13,6 +13,7 @@ export class ProfileComponent implements OnInit {
   profile: any = 'amani-joseph';
   user!: Profile;
   repos: any;
+  repo!: Repo;
   error: any = null;
 
   constructor(private profileService: ProfileService) {}
