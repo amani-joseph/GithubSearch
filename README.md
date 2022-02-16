@@ -1,6 +1,6 @@
 # GithubSearch
 
-![Git-Search App](src\assets\screenshot.png)
+![Git-Search App](https://github.com/amani-joseph/GithubSearch/blob/hotel/src/assets/screenshot.png)
 
 ### Description
 
